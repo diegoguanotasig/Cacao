@@ -5,11 +5,15 @@ project:
 
 website:
   title: "Aprendizaje Profundo"
-  navbar:
-    left:
-      - href: index.qmd
-        text: Home
-      
+  sidebar:
+    style: "docked"
+    search: true
+    contents:
+      - text: "Welcome"
+        href: index.qmd
+      - section: "Identificación con Yolo"
+        contents:
+          - yolo.qmd
 format:
   html:
     theme: cosmo

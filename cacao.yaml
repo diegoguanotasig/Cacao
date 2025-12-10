@@ -1,0 +1,11 @@
+path: data
+
+train: images/train
+val: images/val
+
+names:
+  0: sana
+  1: monilia
+  2: phytophthora
+  3: escoba_de_brujas
+  4: antracnosis
