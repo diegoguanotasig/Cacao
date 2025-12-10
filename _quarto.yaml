@@ -1,0 +1,20 @@
+project:
+  type: website
+  output-dir: docs  # Cambiar de _site a docs
+  resources: data/*.jpg   # incluir todos los CSV dentro de la carpeta data/ 
+
+website:
+  title: "Aprendizaje Profundo"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      
+format:
+  html:
+    theme: cosmo
+    toc: true
+    code-fold: true
+    fig-align: center
+    embed-resources: true
+ 
