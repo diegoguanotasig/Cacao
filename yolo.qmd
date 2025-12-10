@@ -10,13 +10,23 @@ execute:
 ```{python}
 from ultralytics import YOLO
 
-model = YOLO("yolov8n.pt")  # modelo base
+model = YOLO("yolov8n.pt")
+
+```
+
+```{python}
+import yaml
+
+with open("F:/2025/MAST_IA/1.- Fundamentos IA/Cacao/cacao.yaml", "r", encoding="utf-8") as f:
+    data = yaml.safe_load(f)
+
+print(data)
 ```
 
 # Entrenar usando cacao.yaml
 ```{python}
 results = model.train(
-data="cacao.yaml", # archivo con estructura del dataset
+data= "F:/2025/MAST_IA/1.- Fundamentos IA/Cacao/cacao.yaml", # archivo con estructura del dataset
 epochs=50,
 imgsz=640,
 batch=16

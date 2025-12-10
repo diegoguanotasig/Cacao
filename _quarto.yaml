@@ -9,7 +9,7 @@ website:
     style: "docked"
     search: true
     contents:
-      - text: "Welcome"
+      - text: "Welcome Clasificador de Enfermedades del Cacao" 
         href: index.qmd
       - section: "Identificación con Yolo"
         contents:
