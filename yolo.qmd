@@ -2,7 +2,7 @@
 title: "Detección de Enfermedades de Cacao con YOLO"
 format: html
 execute:
-  echo: true
+  echo: false
   warning: false
 ---
 
@@ -46,3 +46,4 @@ plt.axis("off")
 plt.title("Detección de enfermedades de cacao")
 plt.show()
 ```
+
