@@ -27,7 +27,7 @@ print(data)
 ```{python}
 results = model.train(
 data= "F:/2025/MAST_IA/1.- Fundamentos IA/Cacao/cacao.yaml", # archivo con estructura del dataset
-epochs=50,
+epochs=20,
 imgsz=640,
 batch=16
 )

@@ -20,7 +20,7 @@ import os
 ```
 
 ```{python}
-BASE_DIR = "G:\Mi unidad\Colab Notebooks\AProfundo\clasificacion_dataset/"
+BASE_DIR = "G:/Mi unidad/Colab Notebooks/AProfundo/clasificacion_dataset/"
 IMG_SIZE = (224, 224)
 BATCH = 32
 ```
@@ -64,6 +64,10 @@ def mostrar_5_iniciales(dataset):
 mostrar_5_iniciales(train_ds)
 ```
 
+```{python}
+import tensorflow as tf
+print(tf.config.list_physical_devices('GPU'))
+```
 # EfficientNetB0
 ```{python}
 efficient_model = EfficientNetB0(
@@ -152,3 +156,4 @@ def predict(img_path, model):
 img_path = r"G:\Mi unidad\Colab Notebooks\AProfundo\clasificacion_dataset\test\monilia\Monilia101.jpg"
 print(predict(img_path, model_m))
 ```
+
